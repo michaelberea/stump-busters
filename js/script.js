@@ -7,8 +7,15 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
 });
 
-// Form Submission
+// Form Submission (Hero Form)
 document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your request! We’ll contact you soon.');
+    this.reset();
+});
+
+// Form Submission (Secondary Contact Form)
+document.getElementById('contact-form-secondary').addEventListener('submit', function(event) {
     event.preventDefault();
     alert('Thank you for your request! We’ll contact you soon.');
     this.reset();

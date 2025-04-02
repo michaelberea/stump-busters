@@ -14,7 +14,7 @@
                 <img src="assets/logo.png" alt="Stump Busters Stump Grinding Logo">
             </a>
             <div class="nav-right">
-                <span class="phone">Call Us: (262) 287-6544</span>
+                <span class="phone">Call Us: <a href="tel:2622876544" style="color: #4a6838;">(262) 287-6544</a></span>
                 <span class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -30,12 +30,27 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- New Hero Section with Description and Form -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Stump Grinding Experts in the Carolinas</h2>
-            <p>Reliable, fast, and affordable stump removal for a cleaner yard.</p>
-            <a href="#contact" class="btn">Get a Free Quote</a>
+        <div class="hero-wrapper">
+            <div class="hero-text">
+                <p class="tagline">Swift, Affordable, Professional</p>
+                <h2>Trusted Stump Grinding in Matthews, NC</h2>
+                <p class="service-area">Serving all of Mecklenburg County, Union County, and Lancaster County</p>
+                <a href="tel:2622876544" class="btn call-btn">Call Us (262) 287-6544</a>
+            </div>
+            <div class="hero-form">
+                <h3>Contact Us</h3>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Full Name*" required>
+                    <div class="form-row">
+                        <input type="tel" name="phone" placeholder="Phone*" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                    </div>
+                    <textarea name="message" placeholder="Message/Questions..." required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -44,10 +59,9 @@
         <div class="content-wrapper">
             <div class="text-block">
                 <h2>Why Choose Stump Busters?</h2>
-                <p>Stump Busters Stump Grinding excels in fast and effective stump removal across Charlotte, NC. Our skilled team uses state-of-the-art equipment to work every day, swiftly eliminating unwanted stumps to improve your property’s safety and appearance. We offer affordable rates and prioritize customer happiness, delivering a seamless experience. Count on us to revitalize your landscape’s charm.</p>
+                <p>Stump Busters Stump Grinding is a family-owned business excelling in fast and effective stump removal across Matthews, NC. Our skilled team uses advanced equipment to work every day, swiftly eliminating unwanted stumps to improve your property’s safety and appearance. We offer affordable rates and prioritize customer happiness, delivering a seamless experience. Count on us to revitalize your landscape’s charm.</p>
             </div>
             <div class="image-block">
-                <!-- Placeholder for image -->
                 <div class="image-placeholder">Add stump grinding photo here</div>
             </div>
         </div>
@@ -75,15 +89,16 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Get in Touch</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+        <p>Have more questions? Reach out to us below!</p>
+        <form id="contact-form-secondary">
+            <label for="name-secondary">Name:</label>
+            <input type="text" id="name-secondary" name="name" required>
+            <label for="email-secondary">Email:</label>
+            <input type="email" id="email-secondary" name="email" required>
+            <label for="phone-secondary">Phone:</label>
+            <input type="tel" id="phone-secondary" name="phone" required>
+            <label for="message-secondary">Message:</label>
+            <textarea id="message-secondary" name="message" required></textarea>
             <button type="submit" class="btn">Send Request</button>
         </form>
     </section>
@@ -91,7 +106,7 @@
     <!-- Footer -->
     <footer>
         <img src="assets/logo.png" alt="Stump Busters Stump Grinding Logo" class="footer-logo">
-        <p>Stump Busters Stump Grinding | (262) 287-6544 | Serving the Carolinas</p>
+        <p>Stump Busters Stump Grinding | <a href="tel:2622876544" style="color: #f6e9c7;">(262) 287-6544</a> | Serving the Carolinas</p>
         <p>© 2025 All rights reserved.</p>
     </footer>
 
