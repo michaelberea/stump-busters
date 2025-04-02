@@ -1,17 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Stump Busters Stump Grinding 2.0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stump Busters Stump Grinding</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Stump Busters Stump Grinding 2.0</h1>
-  <p>This is my first GitHub Pages website.</p>
-  <form action="https://formspree.io/f/your-unique-id" method="POST">
-    <label>Name: <input type="text" name="name"></label><br>
-    <label>Email: <input type="email" name="email"></label><br>
-    <label>Message: <textarea name="message"></textarea></label><br>
-    <button type="submit">Send</button>
-  </form>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <img src="assets/logo.png" alt="Stump Busters Stump Grinding Logo">
+            </a>
+            <div class="nav-right">
+                <span class="phone">Call Us: (123) 456-7890</span>
+                <span class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </span>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Stump Grinding Experts in the Carolinas</h2>
+            <p>Fast, affordable stump removal for a cleaner yard.</p>
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content-wrapper">
+            <div class="text-block">
+                <h2>Why Choose Stump Busters?</h2>
+                <p>We’re a family-owned business with years of experience grinding stumps across the Carolinas. Our team uses top-notch equipment to get the job done right, leaving your property stump-free and ready for anything.</p>
+            </div>
+            <div class="image-block">
+                <!-- Placeholder for image -->
+                <div class="image-placeholder">Add stump grinding photo here</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Stump Grinding</h3>
+                <p>Precision removal of stumps to ground level or below.</p>
+            </div>
+            <div class="service-item">
+                <h3>Debris Removal</h3>
+                <p>We clean up the mess so you don’t have to.</p>
+            </div>
+            <div class="service-item">
+                <h3>Root Extraction</h3>
+                <p>Eliminate roots to prevent regrowth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Request</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="assets/logo.png" alt="Stump Busters Stump Grinding Logo" class="footer-logo">
+        <p>Stump Busters Stump Grinding | (123) 456-7890 | Serving the Carolinas</p>
+        <p>© 2025 All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
