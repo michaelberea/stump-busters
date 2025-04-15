@@ -388,6 +388,10 @@ footer {
         text-align: center;
     }
 
+    .hero {
+        padding: 2rem 1rem;
+    }
+
     .hero-wrapper {
         flex-direction: column;
         gap: 2rem;
