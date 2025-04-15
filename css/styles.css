@@ -212,6 +212,7 @@ nav {
 /* About Section */
 #about {
     padding: 3rem 2rem;
+    padding-top: 4em;
 }
 
 .content-wrapper {
