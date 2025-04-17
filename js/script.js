@@ -1,22 +1,19 @@
-// Hamburger Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
+// Hamburger Menu Toggle
 hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', hamburger.classList.contains('open'));
+});
+
+// Keyboard Accessibility
+hamburger.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('open');
-});
-
-// Form Submission (Hero Form)
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for your request! We’ll contact you soon.');
-    this.reset();
-});
-
-// Form Submission (Secondary Contact Form)
-document.getElementById('contact-form-secondary').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for your request! We’ll contact you soon.');
-    this.reset();
+    hamburger.setAttribute('aria-expanded', hamburger.classList.contains('open'));
+  }
 });
